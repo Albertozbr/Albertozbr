@@ -1,10 +1,8 @@
 # Hello! My name is Alberto
 
--👨🏽‍🎓I'm currently studying science computer
+-👨🏽‍🎓I'm currently studying science computer at UFJ
 
 -💻I'm learning to program in C and Java
-
--😊Pronouns, he his
 
 <picture>
   <source
