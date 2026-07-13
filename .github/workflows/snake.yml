@@ -1,18 +1,17 @@
 name: Generate Datas
 on:
   schedule:
-    # Executa a cada 12 horas para atualizar sua cobrinha
-    - cron: "* */12 * * *"
-  
-  # Permite que você rode o script manualmente se quiser
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+    - main
 
 jobs:
   build:
     name: Jobs to update datas
     runs-on: ubuntu-latest
     steps:
-      # Puxa a ação que cria a cobrinha
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -22,7 +21,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      # Pega os arquivos gerados e joga para uma branch chamada 'output'
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
