@@ -2,7 +2,8 @@
 
 -👨🏽‍🎓I'm currently studying science computer at UFJ
 
--💻I'm learning to program in C and Java
+-💻I'm learning to program in C, Java and Python
+
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Alberto-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
